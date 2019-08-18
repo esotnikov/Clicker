@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="game" *ngIf="!gameResult">
+    <div class="counter">
+      {{ counter }}
+    </div>
+    <div class="btn_game">
+      <button class="btn" *ngIf="btnStart" (click)="start()">Start</button>
+      <button class="btn" *ngIf="!btnStart" (click)="counClick()">Click</button>
+    </div>
+    <div class="timer">
+      {{ timer }}
+    </div>
+  </div>
+  <div class="gameResult" *ngIf="gameResult">
+    <div class="result_block">{{name}} - {{textResult}}</div>
+    <div class="btn_block">
+      <button class="" (click)="closeGame()">Close game</button>
+      <button class="" (click)="restartGame()">Restart game</button>
+    </div>
+  </div>
+</div>

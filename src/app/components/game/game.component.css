@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    background: red;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #ffffff;
+    outline: none;
+}
+
+.counter, .timer {
+    margin: 50px 0;
+    font-size: 24px;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

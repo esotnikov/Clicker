@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  goToGame = false;
   title = 'Clicker';
+
+  routeGame() {
+    this.goToGame = true;
+  }
+
+  start() {
+    console.log('fuck');
+    this.goToGame = false;
+  }
 }
